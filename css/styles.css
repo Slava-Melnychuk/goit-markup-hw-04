@@ -9,6 +9,7 @@
 	--light-color: #f4f4fd;
 	--modal-overlay-color: #2e2f42;
 	--hero-background-color: #2e2f42;
+	--bg-gradient: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7));
 }
 
 html {
@@ -43,7 +44,7 @@ img {
 	width: 1158px;
 	padding-left: 15px;
 	padding-right: 15px;
-	/*outline: 1px solid red;*/
+	outline: 1px solid red;
 	margin: 0 auto;
 }
 
@@ -188,12 +189,25 @@ body {
 .main {
 	padding-top: 188px;
 	padding-bottom: 188px;
+
 	background-color: var(--dark-color);
 	color: #ffffff;
+
+	max-width: 1440px;
+	margin: 0 auto;
+	background-image: var(--bg-gradient), url("../images/people-office.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
 }
 
-.main{
+.main {
 	text-align: center;
+}
+
+.main-container{
+
 }
 
 .main-title {
@@ -208,7 +222,6 @@ body {
 	display: block;
 	text-align: center;
 
-;
 }
 
 .main-btn {
