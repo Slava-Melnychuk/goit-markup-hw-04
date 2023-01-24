@@ -53,6 +53,24 @@ img {
 	padding-bottom: 120px;
 }
 
+.picture-list{
+	display: flex;
+
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.picture-item{
+	display: flex;
+	justify-content: center;
+
+	width: calc((100% - 72px)/4);
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin-bottom: 8px;
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -265,6 +283,7 @@ body {
 	font-size: 20px;
 	line-height: 1.2;
 	letter-spacing: 0.02em;
+	margin-bottom: 8px;
 }
 
 .feature-item-text {
@@ -275,6 +294,13 @@ body {
 
 .feature-container{
 	display: flex;
+	flex-direction: column;
+}
+
+.picture-item{
+	background-color: var(--light-color);
+	border-radius: 4px;
+	margin-bottom: 8px;
 }
 
 /* ----------What are we doing-------- */
@@ -333,7 +359,37 @@ body {
 	line-height: 1.5;
 	text-align: center;
 	padding-top: 8px;
+	margin-bottom: 8px;
 }
+
+.team-soc-link-list{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 24px;
+}
+
+.soc-item{
+	background-color: var(--primary-brand-color);
+	border-radius: 50%;
+	padding: 12px;
+}
+.soc-item:hover,
+.soc-item:focus{
+	background-color: var(--pressed-state-color);
+}
+
+.picture-icon{
+	display: block;
+}
+
+/* ----------Customers-------- */
+
+
+
+
+
+
 
 /* ----------FOOTER-------- */
 
