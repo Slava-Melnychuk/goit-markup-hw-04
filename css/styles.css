@@ -44,7 +44,7 @@ img {
 	width: 1158px;
 	padding-left: 15px;
 	padding-right: 15px;
-	outline: 1px solid red;
+	/*outline: 1px solid red;*/
 	margin: 0 auto;
 }
 
@@ -485,17 +485,17 @@ body {
 	margin-bottom: 16px;
 }
 
-.team-soc-link-list{
+.footer-soc .team-soc-link-list{
 	gap: 16px;
 }
 
-.soc-link{
+.footer-soc .soc-link{
 	background-color: rgba(255, 255, 255, 0.1);
 	padding: 8px;
 }
 
-.soc-link:hover,
-.soc-link:focus{
+.footer-soc .soc-link:hover,
+.footer-soc .soc-link:focus{
 	background-color: var(--success-color);
 }
 
@@ -539,6 +539,13 @@ body {
 .filter-btn:focus {
 	color: #ffffff;
 	background-color: var(--pressed-state-color);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.filter-btn:active{
+	color: #ffffff;
+	background-color: var(--pressed-state-color);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .gallery-list{
@@ -551,6 +558,15 @@ body {
 .card {
 	text-decoration: none;
 	width: calc((100% - 48px) / 3);
+	border: 1px solid var(--accent-color);
+	border-top: none;
+	box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.gallery-list:hover .card-text,
+.gallery-list:focus .card-text{
+
+	box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .card-text{
