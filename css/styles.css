@@ -53,24 +53,6 @@ img {
 	padding-bottom: 120px;
 }
 
-.picture-list{
-	display: flex;
-
-	justify-content: center;
-	align-items: center;
-	gap: 24px;
-}
-
-.picture-item{
-	display: flex;
-	justify-content: center;
-
-	width: calc((100% - 72px)/4);
-	padding-top: 24px;
-	padding-bottom: 24px;
-	margin-bottom: 8px;
-}
-
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -224,9 +206,7 @@ body {
 	text-align: center;
 }
 
-.main-container{
 
-}
 
 .main-title {
 	width: 496px;
@@ -277,6 +257,18 @@ body {
 	width: calc((100% - 72px) / 4);
 }
 
+.feature-icon{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	padding-top: 24px;
+	padding-bottom: 24px;
+	margin-bottom: 8px;
+	background-color: var(--light-color);
+	border-radius: 4px;
+}
+
 .feature-item-title {
 	color: var(--dark-color);
 	font-weight: 500;
@@ -295,12 +287,6 @@ body {
 .feature-container{
 	display: flex;
 	flex-direction: column;
-}
-
-.picture-item{
-	background-color: var(--light-color);
-	border-radius: 4px;
-	margin-bottom: 8px;
 }
 
 /* ----------What are we doing-------- */
@@ -384,6 +370,7 @@ body {
 	border-radius: 50%;
 	padding: 12px;
 	background-color: var(--primary-brand-color);
+	cursor: pointer;
 }
 
 .soc-link:hover,
@@ -419,6 +406,7 @@ body {
 	align-items: center;
 	justify-content: center;
 	fill: var(--subtle-text-color);
+	cursor: pointer;
 }
 /*.customer-icon{*/
 /*	fill: var(--subtle-text-color);*/
@@ -540,12 +528,15 @@ body {
 	color: #ffffff;
 	background-color: var(--pressed-state-color);
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+	border-color: var(--pressed-state-color);
 }
 
 .filter-btn:active{
 	color: #ffffff;
 	background-color: var(--pressed-state-color);
 	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+	border-color: var(--pressed-state-color);
+
 }
 
 .gallery-list{
@@ -563,8 +554,8 @@ body {
 	box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08);
 }
 
-.gallery-list:hover .card-text,
-.gallery-list:focus .card-text{
+.card-link:hover,
+.card-link:focus {
 
 	box-shadow: 0 1px 6px rgba(46, 47, 66, 0.08), 0 1px 1px rgba(46, 47, 66, 0.16), 0 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -573,6 +564,9 @@ body {
 	border-bottom: 1px solid #E7E9FC;
 	border-left: 1px solid #E7E9FC;
 	border-right: 1px solid #E7E9FC;
+	padding-top: 32px;
+	padding-bottom: 32px;
+	padding-left: 16px;
 }
 
 .card-name {
@@ -582,8 +576,7 @@ body {
 	line-height: 1.2;
 	letter-spacing: 0.02em;
 	display: block;
-	padding-top: 32px;
-	padding-left: 16px;
+
 }
 .card-type {
 	color: var(--dark-color);
@@ -593,6 +586,4 @@ body {
 	line-height: 1.5;
 	display: block;
 	padding-top: 8px;
-	padding-left: 16px;
-	padding-bottom: 32px;
 }
